@@ -1,11 +1,14 @@
 ---
-title: 'Two Forms of Pre-rendering'
+title: 'Chottogram'
 date: '2020-01-01'
+image1Path : '/images/ctg1.jpg'
+image2Path : '/images/ctg2.jpg'
+thumbnailPath : '/images/ctg.jpg'
 ---
 
-Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
+A city tour of Chittagong, also known as Chattogram, allows you to explore the vibrant culture, historical landmarks, and natural beauty of the city. Here are some attractions and places to visit during a Chittagong city tour:
 
-- **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
-- **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.
 
-Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
+- **Foy's Lake**: Enjoy some leisure time at Foy's Lake, a picturesque artificial lake surrounded by hills and greenery. The lake offers boating facilities, scenic views, and amusement parks for recreational activities.
+
+- **Mahamaya Lake**: Kayaking in Mahamaya Lake is a wonderful outdoor activity to experience in Chittagong. Mahamaya Lake, unlike Foy's Lake, is a picturesque natural lake located in the Mirsarai, Chattogram 

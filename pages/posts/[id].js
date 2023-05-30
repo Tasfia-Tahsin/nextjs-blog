@@ -3,6 +3,7 @@ import { getAllPostIds, getPostData } from '../../lib/posts';
 import Head from 'next/head';
 import Date from '../../components/date';
 import utilStyles from '../../styles/utils.module.css';
+import Image from 'next/image';
 
 
 export async function getStaticProps({ params }) {
@@ -31,6 +32,42 @@ export default function Post({ postData }) {
           <div className={utilStyles.lightText}>
             <Date dateString={postData.date} />
           </div>
+
+          <div className={utilStyles.grid}>
+            <Image
+              priority 
+              src={postData.image1Path}
+              className={utilStyles.borderSquare}
+              height={144}
+              width={144}
+              alt=""
+            />
+            <Image
+              priority 
+              src={postData.image2Path}
+              className={utilStyles.borderSquare}
+              height={144}
+              width={144}
+              alt=""
+            />
+            <Image
+              priority 
+              src={postData.thumbnailPath}
+              className={utilStyles.borderSquare}
+              height={144}
+              width={144}
+              alt=""
+            />
+            <Image
+              priority 
+              src={postData.image1Path}
+              className={utilStyles.borderSquare}
+              height={144}
+              width={144}
+              alt=""
+            />
+          </div>
+          
           <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </article>
       </Layout>

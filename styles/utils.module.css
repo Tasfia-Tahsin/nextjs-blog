@@ -28,7 +28,16 @@
   .borderCircle {
     border-radius: 9999px;
   }
-  
+  .borderSquare {
+    border-radius: 0; /* Remove previous border-radius */
+    width: 200px; /* Adjust the desired side length */
+    height: 200px; /* Adjust the desired side length */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ 
   .colorInherit {
     color: inherit;
   }
@@ -50,3 +59,10 @@
   .lightText {
     color: #666;
   }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  
