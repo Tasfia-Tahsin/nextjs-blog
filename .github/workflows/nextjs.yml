@@ -39,5 +39,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
           branch: gh-pages  # The "gh-pages" branch is a common convention for deploying static sites on GitHub Pages
-          folder: ./out  # By default, Next.js uses the ./out directory for the exported static files.
+          folder: build  # By default, Next.js uses the ./out directory for the exported static files.
           token: ${{ secrets.GITHUB_TOKEN }}
