@@ -1,0 +1,43 @@
+name: Deploy nextjs-blog.js Site
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"  # modified
+      - name: Install dependencies
+        run: npm install  # Modified 
+      - name: Build Next.js site
+        run: next build  # Modify based on your build command
+
+  deploy:
+    environment:
+      name: github-pages
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          branch: gh-pages  # The "gh-pages" branch is a common convention for deploying static sites on GitHub Pages
+          folder: ./out  # By default, Next.js uses the ./out directory for the exported static files.
+          token: ${{ secrets.GITHUB_TOKEN }}
