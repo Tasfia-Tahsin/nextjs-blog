@@ -27,7 +27,7 @@ jobs:
       - name: Install dependencies
         run: npm install  # Modified 
       - name: Build Next.js site
-        run: next build  # Modify based on your build command
+        run: npm build  # Modify 
 
   deploy:
     environment:
