@@ -37,6 +37,6 @@ jobs:
     needs: build
     steps:
       - name: Deploy to Vercel
-        uses: amondnet/vercel-action@v20
+        uses: vercel/action@v20 #amondnet/vercel-action@v20
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
