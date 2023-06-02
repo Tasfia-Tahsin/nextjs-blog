@@ -6,7 +6,7 @@ image2Path : '/images/ctg2.jpg'
 thumbnailPath : '/images/ctg.jpg'
 ---
 
-A city tour of Chittagong, also known as Chattogram, allows you to explore the vibrant culture, historical landmarks, and natural beauty of the city. Here are some attractions and places to visit during a Chittagong city tour:
+A city tour of Chittagong , also known as Chattogram, allows you to explore the vibrant culture, historical landmarks, and natural beauty of the city. Here are some attractions and places to visit during a Chittagong city tour:
 
 
 - **Foy's Lake**: Enjoy some leisure time at Foy's Lake, a picturesque artificial lake surrounded by hills and greenery. The lake offers boating facilities, scenic views, and amusement parks for recreational activities.
